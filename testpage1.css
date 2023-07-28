@@ -1,0 +1,249 @@
+* {
+    box-sizing: boder-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.page--header {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.navigation--links {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    font-size: 24px;
+    list-style-type: none;
+}
+
+.navigation--links > li {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation--links > li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid white;
+    transition: all .4s linear-in-out;
+}
+
+.navigation--link {
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.nikke_trailer {
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(60%);
+}
+.circle_dot{
+    padding: 0 auto ;
+}
+
+.nikke_buttonplay{
+    width: 10%;
+    height:20%;
+    z-index:3;
+    justify-content: center;
+    transition: .1s;
+    position:absolute;
+    bottom:40%;
+    left:50%;
+} 
+
+.nikke_buttonplay:hover{
+    transform:scale(1.5);
+}
+
+ .nikke_circledot{
+    width:20%;
+    height: 40%;
+    padding-left:40%;
+    position:absolute;
+    top:200px;
+    z-index: 3;
+    animation: circle_aim 6s  infinite;
+    
+} 
+@keyframes circle_aim {
+    from { 	transform:  translateX(1px) rotate(-360deg); }
+    to   {  transform:  translateX(1px) rotate(-0deg); }
+}
+
+
+.nikke-second-part{
+    display: flex;
+    width:100%;
+}
+
+.nikke-side-menu{
+    display: flex;
+    flex-direction: column;
+    opacity:3.3;
+    width: 40%;;
+    justify-content: center;
+    align-items: center;
+    background-color:#000;
+    gap:0;
+    filter: brightness(30%);
+}
+
+.nikke-side-menu a:hover{
+    background-color: rgb(255, 255, 255, 0.6);
+    transition: all .3s linear-in-out; 
+    border-bottom: 4px solid white;
+}
+
+.nikke-character-pic{
+    background-color: #000;
+    width:160%;
+}
+
+.nikke-charac-nav{
+    display: flex;
+    width: 40%;
+    margin-top: 35.55%;
+    padding-right: 30%;
+}
+
+.nikke-charac-elysion {
+    margin: 32px;
+    width: 1374px;
+    height: 1000px;
+    position: relative;
+}
+
+.nikke-charac1-ely {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    filter: saturate(50%) brightness(60%);
+}
+.nikke-charac1-ely:hover {
+    filter: saturate(100%) brightness(90%);
+}
+
+.nikke-charac2-ely {
+    position: absolute;
+    left: 359px;
+    z-index: 1000;
+    filter: saturate(50%) brightness(60%);
+}
+
+.nikke-charac2-ely:hover {
+    filter: saturate(100%) brightness(90%);
+}
+
+.nikke-charac3-ely {
+    position: absolute;
+    top: 45px;
+    left: 698px;
+    filter: saturate(50%) brightness(60%);
+}
+
+.nikke-charac3-ely:hover {
+    filter: saturate(100%) brightness(90%);
+}
+.nikke-enemy-contain {
+    display: flex;
+    margin:0;
+    height: 100%;
+    width: auto;
+
+}
+
+.nikke-enemy-contain > li {
+    width: 16.67%;
+    background-size: cover;
+    background-position: center;
+    filter: saturate(100%);
+}
+
+.nikke-enemy1{
+    background:url("https://nikke-en.com/images/nikke_bos_01.jpg");
+}
+
+.nikke-enemy2{
+    background:url("https://nikke-en.com/images/nikke_bos_02.jpg");
+}
+
+.nikke-enemy3{
+    background:url(	"https://nikke-en.com/images/nikke_bos_03.jpg");
+}
+
+.nikke-enemy4{
+    background:url("https://nikke-en.com/images/nikke_bos_04.jpg");
+}
+
+.nikke-enemy5{
+    background:url("https://nikke-en.com/images/nikke_bos_05.jpg");
+}
+
+.nikke-enemy6{
+    background:url("https://nikke-en.com/images/nikke_bos_06.jpg");
+ }
+
+ @keyframes ani-enemy-light{
+     0%,100% {opacity:0;}
+     50% {opacity:1;}
+ }
+
+.nikke-enemy-contain > li > div {
+    height: 100%;
+    background-size: cover;
+    animation: ani-enemy-light 1s linear infinite;
+    filter: saturate(100%) brightness(110%);
+    cursor: pointer;
+}
+
+
+
+.nikke-enemy-contain > li:hover{
+    filter: saturate(100%)brightness(40%);
+    cursor: pointer;
+}
+.enemy1-light{
+    background: url("https://nikke-en.com/images/nikke_bos_light_01.jpg") no-repeat center center;
+}
+
+.enemy2-light{
+    background: url("https://nikke-en.com/images/nikke_bos_light_02.jpg") no-repeat center center;
+}
+
+.enemy3-light{
+    background: url("https://nikke-en.com/images/nikke_bos_light_03.jpg") no-repeat center center;
+}
+
+.enemy4-light{
+    background: url("https://nikke-en.com/images/nikke_bos_light_04.jpg") no-repeat center center;
+}
+
+.enemy5-light{
+    background: url("https://nikke-en.com/images/nikke_bos_light_05.jpg") no-repeat center center;
+}
+
+.enemy6-light{
+    background: url("https://nikke-en.com/images/nikke_bos_light_06.jpg") no-repeat center center;
+}
+
+.block{
+    top:200%;
+    position:absolute;
+}
+
